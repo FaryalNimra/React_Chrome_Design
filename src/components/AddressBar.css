@@ -1,0 +1,235 @@
+.address-bar-container {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 16px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #dadce0;
+}
+
+.navigation-controls {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.nav-button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5f6368;
+  transition: all 0.2s ease;
+}
+
+.nav-button:hover:not(:disabled) {
+  background: #dadce0;
+  color: #202124;
+}
+
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: #9aa0a6;
+}
+
+.address-bar {
+  flex: 1;
+  height: 36px;
+  background: #ffffff;
+  border: 1px solid #dadce0;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  transition: all 0.2s ease;
+  min-width: 400px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.address-bar:hover {
+  border-color: #bdc1c6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.address-bar:focus-within {
+  border-color: #1a73e8;
+  box-shadow: 0 1px 3px rgba(26, 115, 232, 0.3);
+}
+
+.url-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #202124;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  width: 100%;
+}
+
+.url-input::placeholder {
+  color: #9aa0a6;
+}
+
+.right-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.top-links {
+  display: flex;
+  gap: 16px;
+}
+
+.top-link {
+  color: #5f6368;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.top-link:hover {
+  color: #202124;
+}
+
+.apps-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #5f6368;
+  transition: all 0.2s ease;
+}
+
+.apps-button:hover {
+  background: #f1f3f4;
+  color: #202124;
+}
+
+.profile-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.profile-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #1a73e8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.address-bar-actions {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.action-button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5f6368;
+  transition: all 0.2s ease;
+}
+
+.action-button:hover {
+  background: #f1f3f4;
+  color: #202124;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .address-bar-container {
+    padding: 0 12px;
+    gap: 12px;
+  }
+  
+  .address-bar {
+    min-width: 300px;
+  }
+  
+  .right-controls {
+    gap: 8px;
+  }
+  
+  .top-links {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .address-bar-container {
+    padding: 0 8px;
+    gap: 8px;
+  }
+  
+  .address-bar {
+    min-width: 200px;
+  }
+  
+  .right-controls {
+    gap: 6px;
+  }
+  
+  .top-links {
+    gap: 8px;
+  }
+  
+  .top-link {
+    font-size: 12px;
+  }
+  
+  .address-bar-actions {
+    gap: 2px;
+  }
+  
+  .action-button {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .address-bar {
+    min-width: 150px;
+  }
+  
+  .top-links {
+    display: none;
+  }
+  
+  .apps-button {
+    display: none;
+  }
+}

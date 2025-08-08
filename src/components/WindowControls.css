@@ -1,0 +1,49 @@
+.window-controls {
+  display: flex;
+  gap: 6px;
+  -webkit-app-region: no-drag;
+  align-items: center;
+}
+
+.window-control {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  color: #5f6368;
+  background: #dadce0;
+}
+
+.window-control:hover {
+  background: #bdc1c6;
+  transform: scale(1.05);
+}
+
+.window-control.minimize {
+  background: #dadce0;
+}
+
+.window-control.minimize:hover {
+  background: #bdc1c6;
+}
+
+.window-control.maximize {
+  background: #dadce0;
+}
+
+.window-control.maximize:hover {
+  background: #bdc1c6;
+}
+
+.window-control.close {
+  background: #dadce0;
+}
+
+.window-control.close:hover {
+  background: #bdc1c6;
+}
