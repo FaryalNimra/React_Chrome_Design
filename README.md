@@ -99,21 +99,8 @@ src/
 - Maintains Chrome-like proportions
 - Mobile-friendly layout
 
-## Browser Compatibility
-
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-
-## Development Notes
-
-- No backend functionality required
-- All interactions are UI-only
-- Pure CSS styling (no Tailwind or MUI)
-- Functional components with hooks
-- Modern React patterns
 
 ## License
 
 This project is created for demonstration purposes.
+
